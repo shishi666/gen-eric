@@ -1,0 +1,5 @@
+/vendor/
+/test/
+/.phpcs-cache
+/TODO.md
+/.idea

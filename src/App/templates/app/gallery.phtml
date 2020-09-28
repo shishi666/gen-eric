@@ -1,0 +1,25 @@
+<?php $this->layout('layout::default') ?>
+
+<?php $this->start('stylesheets') ?>
+    <link rel="stylesheet" href="<?= $this->basePath('/css/simple-lightbox.min.css') ?>" />
+<?php $this->stop() ?>
+
+<div class="gallery mt-5 text-center">
+    <a href="<?= $this->basePath('/img/photos/salon.png') ?>" class="big">
+        <img src="<?= $this->basePath('/img/photos/thumb/salon.png') ?>" alt="salon" title="Salon 1">
+    </a>
+    <a href="<?= $this->basePath('/img/photos/salon1.png') ?>" class="big" rel="rel1">
+        <<img src="<?= $this->basePath('/img/photos/thumb/salon1.png') ?>" alt="salon1" title="Salon 1">
+    </a>
+    <a href="<?= $this->basePath('/img/photos/salon2.png') ?>" class="big" rel="rel2">
+        <img src="<?= $this->basePath('/img/photos/thumb/salon2.png') ?>" alt="salon2" title="Salon 2">
+    </a>
+</div>
+
+<?php $this->start('javascript') ?>
+    <script src="<?= $this->basePath('/js/simple-lightbox.jquery.min.js') ?>"></script>
+    <script type="text/javascript">
+        var gallery = $('.gallery a').simpleLightbox({});
+
+    </script>
+<?php $this->stop() ?>

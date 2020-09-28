@@ -1,0 +1,13 @@
+@import url("https://use.fontawesome.com/releases/v5.0.11/css/all.css");
+
+.dropdown-item {
+    color: #94d3a2;
+}
+.dropdown-item:hover {
+    background-color: #28a745;
+    color: white;
+}
+.dropdown-item.active {
+    background-color: #28a745;
+    color: white;
+}

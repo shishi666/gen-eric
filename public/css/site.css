@@ -1,0 +1,48 @@
+.text-family {
+    font-family: 'Dancing Script', cursive;
+}
+
+.title{
+    color: blue;
+    font-size: 3rem;
+}
+
+.chapter-header {
+    font-size: 2.5rem;
+    color: #3b99ff;
+}
+
+.description {
+    font-size: 2rem;
+}
+
+.list-header {
+    font-size: 2.2rem;
+    color: #005413;
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.error-logo {
+    font-size: 6vw;
+}
+
+@media (max-width: 991.98px) {
+    .title {
+        font-size: 2rem;
+    }
+    .chapter-header {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .list-header {
+        font-size: 1.2rem;
+    }
+    .price {
+        font-size: 0.8rem;
+    }
+}

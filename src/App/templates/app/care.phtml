@@ -1,0 +1,19 @@
+<?php /** @var array $care */ ?>
+<?php $this->layout('layout::default') ?>
+<div class="row justify-content-md-center mt-3">
+    <div class="col col-lg-8">
+        <ul class="list-unstyled">
+            <?php foreach ($care as $careInfo): ?>
+                <li class="media border-bottom pb-3">
+                    <div class="media-body">
+                        <h2 class="mt-0 chapter-header text-family"><?= $careInfo['title'] ?></h2>
+                        <p class="price font-italic text-family"><?= $careInfo['price'] ?></p>
+                        <p class="mb-0 description text-family"><?= $careInfo['description'] ?></p>
+                        <a class="btn btn-outline-secondary mt-2" href="https://www.facebook.com/generic57" role="button" target="_blank">Prendre rendez-vous</a>
+                    </div>
+                    <img src="<?= $this->basePath('/img/care/' . $careInfo['img']) ?>" class="align-self-center mr-3 d-none d-lg-block" alt="" height="100px">
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>
